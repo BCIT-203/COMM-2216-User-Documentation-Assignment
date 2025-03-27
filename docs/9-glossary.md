@@ -14,7 +14,7 @@
 
 ## Merging
 
-   **Merging** is the process of integrating changes from one branch into another. In Git, after a developer has worked on a separate branch (e.g., to add a feature or fix a bug), the changes can be merged back into the main branch (often called `main` or `master`) so that the entire team benefits from the updates.
+   **Merging** integrates changes from one branch into another, so that the entire team benefits from the updates.
 
 ## Commit
 
