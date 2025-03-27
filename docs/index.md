@@ -1,12 +1,10 @@
 # Introduction
 
-## Software Function
+## Welcome to Git's World
 
-**Git** is a distributed version control system (VCS) used to track changes in source code during software development. It allows multiple developers to work on the same project simultaneously without interfering with each other’s work, making it an essential tool in modern software development workflows.
+**Git** is a distributed [version control system (VCS)](./9-glossary.md#1-version-control-system-vcs) that helps track changes to your codebase, collaborate with other developers, and maintain a history of your project. Whether you're working solo or with a team, Git is an essential tool for managing your source code efficiently.
 
-Git tracks the history of changes made to a codebase and enables developers to revert to previous versions, collaborate efficiently, and maintain an organized history of all modifications. Git can be used both for small personal projects and large-scale enterprise applications, providing flexibility and robustness for all kinds of development.
-
-### Key Features
+## Key Features
 
 1. **Version Control**: Git tracks every change made to a project’s codebase, allowing users to view a complete history of their project.
 2. **Branching and Merging**: Git allows users to create branches (independent lines of development) for different features or fixes, which can later be merged back into the main codebase.
@@ -29,19 +27,3 @@ Git tracks the history of changes made to a codebase and enables developers to r
 - **Open-Source Contributors**: Anyone looking to contribute to open-source projects, where Git is commonly used for version control.
 
 By using Git, you'll be able to track your progress, collaborate effectively with your team, and ensure that your project is always in a stable state. Happy coding!
-
-## Welcome to Git's World
-
-Git is a distributed version control system that helps track changes to your codebase, collaborate with other developers, and maintain a history of your project. Whether you're working solo or with a team, Git is an essential tool for managing your source code efficiently.
-
-## What is Git?
-
-Git is a free and open-source version control system designed to handle everything from small to very large projects with speed and efficiency. It allows you to manage your source code history and collaborate seamlessly with other developers.
-
-## Common Git Commands
-
-- `git log`: View the commit history.
-- `git diff`: Show changes between commits.
-- `git reset`: Unstage or reset changes.
-- `git fetch`: Retrieve updates from a remote repository without merging.
-- `git pull`: Fetch and merge changes from a remote repository.
