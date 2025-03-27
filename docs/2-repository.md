@@ -1,4 +1,4 @@
-# Git: Cloning and Initializing a Repository Guide
+# How to Clone and initialize a Repository Using Git
 
 ## Overview
 
