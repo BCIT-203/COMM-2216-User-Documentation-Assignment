@@ -26,4 +26,24 @@
 - **Project Managers**: Individuals who oversee software development teams and need to understand version control and collaboration tools.
 - **Open-Source Contributors**: Anyone looking to contribute to open-source projects, where Git is commonly used for version control.
 
+## Common Git Commands
+
+Here are some essential Git commands to get started:
+
+| Command | Description |
+|---------|------------|
+| `git init` | Initialize a new Git repository in a project. |
+| `git clone <repo-url>` | Copy an existing remote repository to your local machine. |
+| `git status` | Check the status of files in your working directory. |
+| `git add <file>` | Stage changes for the next commit. |
+| `git commit -m "message"` | Save changes with a descriptive message. |
+| `git push origin <branch>` | Upload local commits to a remote repository. |
+| `git pull origin <branch>` | Fetch and merge changes from a remote repository. |
+| `git branch` | List all branches in the repository. |
+| `git checkout <branch>` | Switch to a different branch. |
+| `git merge <branch>` | Merge a branch into the current branch. |
+| `git log` | View commit history. |
+| `git revert <commit>` | Undo a specific commit by creating a new commit. |
+| `git reset --hard HEAD` | Discard all uncommitted changes and reset to the last commit. |
+
 By using Git, you'll be able to track your progress, collaborate effectively with your team, and ensure that your project is always in a stable state. Happy coding!
