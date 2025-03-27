@@ -2,7 +2,7 @@
 
 ## Overview
 
-Git is a powerful version control system that helps developers manage their code and track changes over time. However, during the development process, you may need to undo, revert, redo, or even edit previous commits. Whether you need to fix a mistake in your commit history, modify a commit message, or discard unnecessary commits, Git provides several tools to help you achieve this. Understanding these tools and when to use them will give you greater flexibility and control over your project\u2019s history.
+Git is a powerful version control system that helps developers manage their code and track changes over time. However, during the development process, you may need to undo, revert, redo, or even edit previous commits. Whether you need to fix a mistake in your commit history, modify a commit message, or discard unnecessary commits, Git provides several tools to help you achieve this. Understanding these tools and when to use them will give you greater flexibility and control over your project's history.
 
 In this guide, we will explore how to do, undo, revert, redo, and edit previous commits in Git, with clear steps and explanations for each operation.
 
@@ -12,7 +12,7 @@ Before diving into how to undo, revert, redo, or edit a commit, let's first revi
 
 ### 1. **Stage Your Changes**
 
-Before committing, make sure you\u2019ve added the changes you want to include in the commit to the staging area.
+Before committing, make sure you've added the changes you want to include in the commit to the staging area.
 
 ```bash
 git add .
@@ -156,7 +156,7 @@ This opens the commit editor, allowing you to change the commit message. If you 
 
 ### 2. **Edit an Older Commit Using Interactive Rebase**
 
-To edit a commit that isn\u2019t the most recent, use `git rebase -i`:
+To edit a commit that isn't the most recent, use `git rebase -i`:
 
 ```bash
 git rebase -i HEAD~3
@@ -164,7 +164,7 @@ git rebase -i HEAD~3
 
 This command allows you to edit commits from the last 3 commits. When the editor opens, change `pick` to `edit` next to the commit you want to modify, then save and close the editor.
 
-Git will pause at the commit you want to edit. You can then modify the commit message or make changes, and when you\u2019re done, use:
+Git will pause at the commit you want to edit. You can then modify the commit message or make changes, and when you're done, you can use:
 
 ```bash
 git commit --amend
@@ -179,7 +179,7 @@ This will apply the changes to the commit and continue the rebase process.
 
 - **Be Careful with `git reset --hard`**: The `--hard` option removes both commits and changes in your working directory. Always double-check before using this command to avoid data loss.
 
-- **Back Up Important Changes**: Before doing operations like `git reset --hard` or rebasing, it\u2019s a good idea to create a backup branch in case you need to recover your changes later:
+- **Back Up Important Changes**: Before doing operations like `git reset --hard` or rebasing, it's a good idea to create a backup branch in case you need to recover your changes later:
 
   ```bash
   git checkout -b backup-branch
@@ -187,9 +187,9 @@ This will apply the changes to the commit and continue the rebase process.
 
 ## Conclusion
 
-Git provides various commands to undo, revert, redo, and edit previous commits, making it a highly flexible tool for version control. Whether you need to fix a mistake, alter commit messages, or recover lost commits, Git\u2019s powerful commands like `git reset`, `git revert`, `git rebase`, and `git cherry-pick` offer the solutions you need.
+Git provides various commands to undo, revert, redo, and edit previous commits, making it a highly flexible tool for version control. Whether you need to fix a mistake, alter commit messages, or recover lost commits, Git's powerful commands like `git reset`, `git revert`, `git rebase`, and `git cherry-pick` offer the solutions you need.
 
-By understanding the difference between these commands and when to use them, you can manage your repository\u2019s history effectively and avoid making irreversible mistakes. Always be mindful when altering commit history, especially in shared repositories, and ensure you have backups when performing potentially destructive actions.
+By understanding the difference between these commands and when to use them, you can manage your repository's history effectively and avoid making irreversible mistakes. Always be mindful when altering commit history, especially in shared repositories, and ensure you have backups when performing potentially destructive actions.
 
 ---
 
