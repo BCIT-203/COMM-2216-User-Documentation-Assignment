@@ -18,15 +18,15 @@
 
 ## Commit
 
-   A **Commit** is a snapshot of changes made to the codebase. When a developer makes changes to files and saves them in Git, they can "commit" those changes with a message describing what was done. Each commit is uniquely identified by a hash and represents a point in the project’s history.
+   A **Commit** is a set of changes made to the codebase. When a developer makes changes to files and saves them in Git, they can commit those changes with a message describing what was done. Each commit is uniquely identified by a hash and represents a point in the project’s history.
 
 ## Repository (Repo)
 
-   A **Repository** is a storage location for a project’s code and its version history. A repository contains all the files and the metadata (commit history, branches, etc.) that Git tracks. A repository can be local (on your machine) or remote (hosted on a server like GitHub or GitLab).
+   A **Repository** contains all the files and the metadata (commit history, branches, etc.) that Git tracks. A repository can be local (on your machine) or remote (hosted on a server like GitHub or GitLab).
 
 ## Clone
 
-   **Cloning** is the process of creating a copy of a remote repository on your local machine. When you clone a repository, you get the entire project history, including all branches and commits, allowing you to work on the project locally and push changes back to the remote repository.
+   **Cloning** is the process of creating a copy of a remote repository on your local machine. When you clone a repository, you get the entire project history, including all branches and commits, allowing you to work on the project locally.
 
 ## Push
 
@@ -34,24 +34,16 @@
 
 ## Pull
 
-   A **Pull** is the action of fetching changes from a remote repository and merging them into your local copy of the repository. It ensures that your local repository is up to date with the latest changes made by other contributors.
+   A **Pull** is a set of actions that fetches changes from a remote repository and merges them into your local copy of the repository. It ensures that your local repository is up to date with the latest changes made by other contributors.
 
-## Fork
+## Forking
 
-   **Forking** is a process used in open-source projects where a developer creates a personal copy of someone else’s repository. This allows them to make changes to the codebase independently, and later propose their changes (via a pull request) to be merged into the original project.
+   **Forking** allows you to make changes to the codebase of open-source projects independently, and later propose the changes (via a pull request) to be merged into the original project.
 
 ## Conflict
 
-   A **Conflict** occurs when two developers make changes to the same part of a file (or the same file) in different branches. Git cannot automatically merge these changes, and the developer must manually resolve the conflict before proceeding.
+   A **Conflict** occurs when two developers make changes to the same file in the same branches and Git cannot automatically merge these changes. Therefore, the developer must manually resolve the conflict before proceeding.
 
 ## Checkout
 
-   **Checkout** is a command used in Git to switch between different branches or to restore a file to a specific version. When you `checkout` a branch, you tell Git to update your working directory to reflect the contents of that branch.
-
-## Tag
-
-   A **Tag** is a reference to a specific point in Git’s history, often used to mark release versions (e.g., `v1.0`). Tags are like commits, but they are usually meant to mark important milestones in the development lifecycle, such as releases.
-
-## Merge Conflict
-
-   A **Merge Conflict** happens when Git is unable to automatically reconcile differences between two branches during the merge process. This typically occurs when two developers modify the same line of code in a file, and Git cannot decide which version to keep. Developers must manually resolve these conflicts.
+   **Checkout** is a command used in Git to switch between different branches or commits.
