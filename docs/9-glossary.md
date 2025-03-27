@@ -2,15 +2,15 @@
 
 ## Version Control System (VCS)
 
-   A **Version Control System** is a tool used to track changes in files over time, especially in software development. It allows developers to manage and record changes made to the source code, making it easier to collaborate, revert to previous versions, and maintain a history of the project.
+   A **Version Control System** is a tool used to track changes in files over time, especially in software development. It makes it easier for developers to collaborate and revert the source code.
 
 ## Distributed System
 
-   A **Distributed System** refers to a system where copies of the repository are available on multiple machines. In Git, each developer has a complete local copy of the repository, allowing them to work offline, make changes, and later synchronize those changes with other copies of the repository. This differs from centralized systems, where there is only one server containing the full repository.
+   A **Distributed System** refers to a system that has multiple copies available on different machines.
 
 ## Branching
 
-   **Branching** is a process in Git that allows developers to create separate lines of development within the same project. Each branch can be worked on independently, and changes can later be merged back into the main project. Branching helps organize features, bug fixes, and experiments without affecting the main codebase.
+   **Branching** allows developers to create separate lines of development within the same project. Branches are independent of each other, and changes can be merged into each other. Branching helps organize features, bug fixes, and experiments without affecting others.
 
 ## Merging
 
