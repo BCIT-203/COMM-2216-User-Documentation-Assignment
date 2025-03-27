@@ -1,8 +1,6 @@
-# Git Installation and Configuration Guide
+# Installation and Configuration
 
 ## Overview
-
-Git is a distributed version control system that allows developers to track changes in source code, collaborate with others, and manage multiple versions of a project. It is widely used in both small and large-scale software development projects.
 
 This guide provides detailed steps for installing Git on various operating systems (Windows, macOS, Linux), configuring it for use, and resolving common setup issues.
 
