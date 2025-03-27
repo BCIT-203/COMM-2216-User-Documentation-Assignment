@@ -1,4 +1,4 @@
-# Troubleshooting guide
+# Troubleshooting
 
 ## TL;DR
 
