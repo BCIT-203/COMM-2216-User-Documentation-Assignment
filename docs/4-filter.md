@@ -193,14 +193,6 @@ git clone --mirror <repository-url> <backup-directory>
 
 ---
 
-## Graphics
-
-Below is an illustration showing how the Git history might look before and after filtering using`git-filter-branch` or `git-filter-repo`:
-
-![Git History Before and After Filter](<https://example.com"}>/git-history-filter.png) <!-- Replace with actual image link -->
-
----
-
 ## Cautions and Warnings
 
 ### Rewriting History
