@@ -1,4 +1,4 @@
-# How to  `git-filter-branch` and `git-filter-repo` in Git
+# How to  `git-filter-branch` and `git-filter-repo`
 
 ## Overview
 

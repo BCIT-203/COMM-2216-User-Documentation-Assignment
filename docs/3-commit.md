@@ -1,4 +1,4 @@
-# How to Do, Undo, Revert, Redo, and Edit Previous Commits in Git
+# How to Do, Undo, Revert, Redo, and Edit Previous Commits
 
 ## Overview
 
