@@ -36,22 +36,22 @@
 
    A **Pull** is the action of fetching changes from a remote repository and merging them into your local copy of the repository. It ensures that your local repository is up to date with the latest changes made by other contributors.
 
-## ****Fork****
+## Fork
 
    **Forking** is a process used in open-source projects where a developer creates a personal copy of someone else’s repository. This allows them to make changes to the codebase independently, and later propose their changes (via a pull request) to be merged into the original project.
 
-## ****Conflict****
+## Conflict
 
    A **Conflict** occurs when two developers make changes to the same part of a file (or the same file) in different branches. Git cannot automatically merge these changes, and the developer must manually resolve the conflict before proceeding.
 
-## ****Checkout****
+## Checkout
 
    **Checkout** is a command used in Git to switch between different branches or to restore a file to a specific version. When you `checkout` a branch, you tell Git to update your working directory to reflect the contents of that branch.
 
-## ****Tag****
+## Tag
 
    A **Tag** is a reference to a specific point in Git’s history, often used to mark release versions (e.g., `v1.0`). Tags are like commits, but they are usually meant to mark important milestones in the development lifecycle, such as releases.
 
-## ****Merge Conflict****
+## Merge Conflict
 
    A **Merge Conflict** happens when Git is unable to automatically reconcile differences between two branches during the merge process. This typically occurs when two developers modify the same line of code in a file, and Git cannot decide which version to keep. Developers must manually resolve these conflicts.
