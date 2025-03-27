@@ -2,6 +2,8 @@ site_name: Git User Documentation
 site_url: https://bcit-203.github.io/COMM-2216-User-Documentation-Assignment/
 theme:
   name: material
+  features:
+    - content.code.copy
 markdown_extensions:
   - admonition
   - pymdownx.details
