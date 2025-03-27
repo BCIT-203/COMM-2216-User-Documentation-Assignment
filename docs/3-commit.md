@@ -193,17 +193,17 @@ git rebase --continue
 
 This will apply the changes to the commit and continue the rebase process.
 
-## Notes, Cautions, and Warnings
+!!! warning
+    **Avoid Rewriting History in Shared Repositories**: If you’ve already pushed commits to a shared repository, using `git reset` or `git rebase` can rewrite history, causing problems for your collaborators. In these cases, prefer using `git revert` instead to maintain a clean history.
 
-- **Avoid Rewriting History in Shared Repositories**: If you’ve already pushed commits to a shared repository, using `git reset` or `git rebase` can rewrite history, causing problems for your collaborators. In these cases, prefer using `git revert` instead to maintain a clean history.
+!!! warning
+    **Be Careful with `git reset --hard`**: The `--hard` option removes both commits and changes in your working directory. Always double-check before using this command to avoid data loss.
 
-- **Be Careful with `git reset --hard`**: The `--hard` option removes both commits and changes in your working directory. Always double-check before using this command to avoid data loss.
-
-- **Back Up Important Changes**: Before doing operations like `git reset --hard` or rebasing, it’s a good idea to create a backup branch in case you need to recover your changes later:
-
-  ```bash
-  git checkout -b backup-branch
-  ```
+!!! warning
+    **Back Up Important Changes**: Before doing operations like `git reset --hard` or rebasing, it’s a good idea to create a backup branch in case you need to recover your changes later:
+    ```bash
+    git checkout -b backup-branch
+    ```
 
 ## Conclusion
 

@@ -10,10 +10,11 @@
 git branch backup-branch
 ```
 
-## Purpose of this Troubleshooting Guide
+## Overview
 
-- This guide helps resolve some of the common issues that developers may face when using Git, particularly for beginners and intermediate users.
-- Each issue is explained in a way that allows users to identify the problem, apply the correct solution, and continue their work with minimal interruptions.
+This guide helps resolve some of the common issues that developers may face when using Git, particularly for beginners and intermediate users.
+
+Each issue is explained in a way that allows users to identify the problem, apply the correct solution, and continue their work with minimal interruptions.
 
 ## 1. **"fatal: not a git repository" Error**
 

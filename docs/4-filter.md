@@ -19,9 +19,17 @@ git clone --mirror <repository-url> <backup-directory>
 1. This creates a full backup of your repository in `<backup-directory>`.
 2. Ensure you test any filtering operations on the backup repository first.
 
-**Warning:**
+!!! warning
+    Always back up your repository before using `git-filter-branch` or `git-filter-repo`, as these operations rewrite history and can result in permanent data loss.
 
-- Always back up your repository before using `git-filter-branch` or `git-filter-repo`, as these operations rewrite history and can result in permanent data loss.
+!!! warning
+    Both `git-filter-branch` and `git-filter-repo` rewrite Git history. This means commit hashes will change, and this can cause issues if others have cloned or forked the repository. Rewriting history can disrupt collaboration, so it should only be done on private branches or with careful coordination.
+
+!!! danger
+    After filtering, you will need to **force push** (`git push --force`) to update the remote repository. This can cause conflicts for other contributors, so it’s best to communicate changes clearly.
+
+!!! warning
+    Running `git-filter-branch` or `git-filter-repo` on large repositories can take time. Always run the filter on a clone of the repository to test the process before applying it to the main repository.
 
 ---
 
@@ -44,10 +52,11 @@ git filter-branch --tree-filter 'rm -f path/to/your/file' -- --all
 Replace `path/to/your/file` with the file you want to remove.
 This command will rewrite all commits and remove the specified file from every commit.
 
-**Note:**
+!!! note
+    This will rewrite all branches (`--all`) and affect the entire commit history.
 
-- This will rewrite all branches (`--all`) and affect the entire commit history.
-- Be sure to make a backup before running this command, as it will permanently remove the file from history.
+!!! note
+    Be sure to make a backup before running this command, as it will permanently remove the file from history.
 
 ---
 
@@ -66,10 +75,11 @@ Run the following command to filter commit messages:
 Replace `old-text` and `new-text` with the text you want to change.
 This will replace the specified text in all commit messages across all branches.
 
-**Caution:**
+!!! warning
+    Modifying commit messages will rewrite commit history and affect all branches.
 
-- Modifying commit messages will rewrite commit history and affect all branches.
-- Ensure that you do this carefully, especially if you’ve shared the history with others.
+!!! warning
+    Ensure that you do this carefully, especially if you’ve shared the history with others.
 
 ---
 
@@ -95,9 +105,8 @@ Run the following command to update the author’s name and email:
 Replace `Old Name` with the current author name and `New Name` with the new name.
 This will update both the author and committer information for all commits.
 
-**Warning:**
-
-- This action rewrites history and should be done with caution, especially if the repository is shared with others.
+!!! warning
+    This action rewrites history and should be done with caution, especially if the repository is shared with others.
 
 ---
 
@@ -109,16 +118,15 @@ To remove a large file (e.g., a `.zip` file or image) that was accidentally comm
 
 Run the following command to remove the file:
 
-   ```bash
-   git filter-branch --tree-filter 'rm -f path/to/largefile' -- --all
-   ```
+```bash
+git filter-branch --tree-filter 'rm -f path/to/largefile' -- --all
+```
 
 Replace `path/to/largefile` with the path to the file you want to remove.
 This will delete the file from all commits, reducing repository size.
 
-**Caution:**
-
-- Removing large files will reduce the repository size, but it will also rewrite the history.
+!!! warning
+    Removing large files will reduce the repository size, but it will also rewrite the history.
 
 ---
 
@@ -155,9 +163,8 @@ git filter-repo --invert-paths --path secret.txt
 This command will remove `secret.txt` from every commit.
 The `--invert-paths` option tells Git to exclude (filter out) the specified file.
 
-**Note:**
-
-- `git-filter-repo` is faster and more efficient than `git-filter-branch`, especially on large repositories.
+!!! note
+    `git-filter-repo` is faster and more efficient than `git-filter-branch`, especially on large repositories.
 
 ---
 
@@ -215,35 +222,8 @@ This command replaces `old-text` with `new-text` in all commit messages.
 
 ---
 
-## Cautions and Warnings
-
-### Rewriting History
-
-- **Warning:** Both `git-filter-branch` and `git-filter-repo` rewrite Git history. This means commit hashes will change, and this can cause issues if others have cloned or forked the repository. Rewriting history can disrupt collaboration, so it should only be done on private branches or with careful coordination.
-- **Important:** After filtering, you will need to **force push** (`git push --force`) to update the remote repository. This can cause conflicts for other contributors, so it’s best to communicate changes clearly.
-
-### Avoid Running Filter on Large Repositories Without Testing
-
-- **Caution:** Running `git-filter-branch` or `git-filter-repo` on large repositories can take time. Always run the filter on a clone of the repository to test the process before applying it to the main repository.
-
----
-
 ## Conclusion
 
 Both `git-filter-branch` and `git-filter-repo` are powerful tools for rewriting Git history. While `git-filter-branch` is useful for simpler tasks, `git-filter-repo` is more efficient and suited for larger repositories.
 
 Always back up your repository before using these tools, and communicate with collaborators if you’re working in a shared repository. With the right precautions, you can clean up your Git history and improve your repository management effectively.
-
-```
-
-### Key Elements in This Guide:
-
-1. **Main Heading**: "Using `git-filter-branch` and `git-filter-repo` in Git"
-2. **Overview**: A brief explanation of both tools and their differences.
-3. **Subheadings**: Clear separation of tasks such as using `git-filter-branch` and `git-filter-repo` with detailed steps for each operation.
-4. **Instruction Steps**: Each step is broken down with clear instructions and examples for various tasks.
-5. **Notes, Cautions, and Warnings**: Important tips and cautions are highlighted to ensure users are aware of potential risks and best practices.
-6. **Graphics**: A placeholder for visualizing how the Git history changes.
-7. **Conclusion**: Summarizes key points and offers advice on using the tools responsibly.
-
-This guide now includes more than 10 detailed steps, with several sub-tasks, and covers both tools comprehensively, allowing for better understanding and safer usage of `git-filter-branch` and `git-filter-repo`.
