@@ -137,7 +137,7 @@ This guide provides detailed steps for installing Git on various operating syste
 ### Common Issues and Solutions
 
 1. **Git Command Not Found:**
-   - **Solution:** Ensure that Git was added to your system's `PATH` during installation. Re-run the installation and check the options to add Git to your system’s `PATH`.
+   - **Solution:** Ensure that Git was added to your system’s `PATH` during installation. Re-run the installation and check the options to add Git to your system’s `PATH`.
 
 2. **Permission Denied When Pushing to Remote:**
    - **Solution:** Ensure you have the correct SSH keys set up for remote repositories, or authenticate with your username/password if using HTTPS.
@@ -150,7 +150,7 @@ This guide provides detailed steps for installing Git on various operating syste
 
 ## Conclusion
 
-Git is an essential tool for version control in modern software development. By following the installation and configuration steps outlined above, you should be ready to start using Git effectively. If you run into any issues, refer to the troubleshooting section for solutions, and don't hesitate to consult Git’s official documentation for more advanced use cases.
+Git is an essential tool for version control in modern software development. By following the installation and configuration steps outlined above, you should be ready to start using Git effectively. If you run into any issues, refer to the troubleshooting section for solutions, and don’t hesitate to consult Git’s official documentation for more advanced use cases.
 
 ### Additional Resources
 

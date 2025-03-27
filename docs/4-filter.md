@@ -49,15 +49,15 @@ If you need to update the commit messages (for example, to correct typos or rewo
 **Caution:**
 
 - Modifying commit messages will rewrite commit history and affect all branches.
-- Ensure that you do this carefully, especially if you've shared the history with others.
+- Ensure that you do this carefully, especially if you’ve shared the history with others.
 
 ---
 
 ### Step 3: Replace an Author Name and Email Across All Commits
 
-If you need to change the author's name or email address in the commit history:
+If you need to change the author’s name or email address in the commit history:
 
-1. Run the following command to update the author's name and email:
+1. Run the following command to update the author’s name and email:
 
    ```bash
    git filter-branch --env-filter '
@@ -100,7 +100,7 @@ To remove a large file (e.g., a `.zip` file or image) that was accidentally comm
 
 ## `git-filter-repo` Overview
 
-`git-filter-repo` is a more efficient and flexible tool designed to handle large repositories and more complex filtering tasks. It is faster than `git-filter-branch` and is recommended for more advanced users. It's also easier to install and use.
+`git-filter-repo` is a more efficient and flexible tool designed to handle large repositories and more complex filtering tasks. It is faster than `git-filter-branch` and is recommended for more advanced users. It’s also easier to install and use.
 
 ### Step 5: Install `git-filter-repo`
 
@@ -133,7 +133,7 @@ git filter-repo --invert-paths --path secret.txt
 
 ### Step 7: Change the Author of Specific Commits
 
-You can modify the author's name and email for specific commits using `git-filter-repo`. For example, to change the author for commits by a specific person:
+You can modify the author’s name and email for specific commits using `git-filter-repo`. For example, to change the author for commits by a specific person:
 
 1. Run the following command:
 
@@ -178,7 +178,7 @@ if \"old-text\" in commit.message:
 
 ### Step 10: Backup Repository Before Filtering
 
-Before running any filtering operations, it's essential to back up your repository to prevent data loss. You can create a backup by cloning the repository:
+Before running any filtering operations, it’s essential to back up your repository to prevent data loss. You can create a backup by cloning the repository:
 
 ```bash
 git clone --mirror <repository-url> <backup-directory>
@@ -198,7 +198,7 @@ git clone --mirror <repository-url> <backup-directory>
 ### Rewriting History
 
 - **Warning:** Both `git-filter-branch` and `git-filter-repo` rewrite Git history. This means commit hashes will change, and this can cause issues if others have cloned or forked the repository. Rewriting history can disrupt collaboration, so it should only be done on private branches or with careful coordination.
-- **Important:** After filtering, you will need to **force push** (`git push --force`) to update the remote repository. This can cause conflicts for other contributors, so it's best to communicate changes clearly.
+- **Important:** After filtering, you will need to **force push** (`git push --force`) to update the remote repository. This can cause conflicts for other contributors, so it’s best to communicate changes clearly.
 
 ### Avoid Running Filter on Large Repositories Without Testing
 
@@ -210,7 +210,7 @@ git clone --mirror <repository-url> <backup-directory>
 
 Both `git-filter-branch` and `git-filter-repo` are powerful tools for rewriting Git history. While `git-filter-branch` is useful for simpler tasks, `git-filter-repo` is more efficient and suited for larger repositories.
 
-Always back up your repository before using these tools, and communicate with collaborators if you're working in a shared repository. With the right precautions, you can clean up your Git history and improve your repository management effectively.
+Always back up your repository before using these tools, and communicate with collaborators if you’re working in a shared repository. With the right precautions, you can clean up your Git history and improve your repository management effectively.
 
 ```
 

@@ -14,7 +14,7 @@ Cloning a repository means creating a local copy of a remote repository. It allo
 
 1. **Get the Repository URL**:
    - Navigate to the repository you want to clone (on GitHub, GitLab, Bitbucket, etc.).
-   - Copy the repository's URL. For example, a GitHub repository URL might look like this:
+   - Copy the repository’s URL. For example, a GitHub repository URL might look like this:
 
      ```
      https://github.com/username/repository-name.git
