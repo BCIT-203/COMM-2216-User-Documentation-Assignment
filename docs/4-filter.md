@@ -68,9 +68,9 @@ If you need to update the commit messages (for example, to correct typos or rewo
 
 Run the following command to filter commit messages:
 
-   ```bash
-   git filter-branch --msg-filter 'sed "s/old-text/new-text/"' -- --all
-   ```
+    ```bash
+    git filter-branch --msg-filter 'sed "s/old-text/new-text/"' -- --all
+    ```
 
 Replace `old-text` and `new-text` with the text you want to change.
 This will replace the specified text in all commit messages across all branches.
@@ -91,16 +91,16 @@ If you need to change the author’s name or email address in the commit history
 
 Run the following command to update the author’s name and email:
 
-   ```bash
-   git filter-branch --env-filter '
-   if [ "$GIT_AUTHOR_NAME" = "Old Name" ];
-   then
-     export GIT_AUTHOR_NAME="New Name"
-     export GIT_AUTHOR_EMAIL="new-email@example.com"
-     export GIT_COMMITTER_NAME="New Name"
-     export GIT_COMMITTER_EMAIL="<new-email@example.com>"
-   fi' -- --all
-   ```
+    ```bash
+    git filter-branch --env-filter '
+    if [ "$GIT_AUTHOR_NAME" = "Old Name" ];
+    then
+        export GIT_AUTHOR_NAME="New Name"
+        export GIT_AUTHOR_EMAIL="new-email@example.com"
+        export GIT_COMMITTER_NAME="New Name"
+        export GIT_COMMITTER_EMAIL="<new-email@example.com>"
+    fi' -- --all
+    ```
 
 Replace `Old Name` with the current author name and `New Name` with the new name.
 This will update both the author and committer information for all commits.

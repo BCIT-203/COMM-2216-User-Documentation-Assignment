@@ -108,9 +108,9 @@ git remote add origin https://github.com/username/repository-name.git
 
 Push your local changes to the remote repository:
 
-   ```bash
-   git push -u origin main
-   ```
+    ```bash
+    git push -u origin main
+    ```
 
 !!! note
     The `git init` command only initializes a repository locally. If you want to collaborate with others or store your project online, you’ll need to link it to a remote repository.

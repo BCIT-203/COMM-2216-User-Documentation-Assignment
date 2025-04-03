@@ -38,18 +38,18 @@ This guide provides detailed steps for installing Git on various operating syste
 #### Step-by-Step Instructions
 
 1. **Use Homebrew (Recommended)**:
-   1. If you have [Homebrew](https://brew.sh/) installed, you can install Git with the following command:
+    1. If you have [Homebrew](https://brew.sh/) installed, you can install Git with the following command:
 
         ```bash
         brew install git
         ```
 
 2. **Manual Installation (Without Homebrew)**:
-   1. Download the Git installer from [https://git-scm.com/download/mac](https://git-scm.com/download/mac).
-   2. Open the `.dmg` file and follow the on-screen instructions to complete the installation.
+    1. Download the Git installer from [https://git-scm.com/download/mac](https://git-scm.com/download/mac).
+    2. Open the `.dmg` file and follow the on-screen instructions to complete the installation.
 
 3. **Verify Installation:**
-   1. Open the Terminal and type the following command to check if Git is installed:
+    1. Open the Terminal and type the following command to check if Git is installed:
 
         ```bash
         git --version
@@ -62,7 +62,7 @@ This guide provides detailed steps for installing Git on various operating syste
 #### Step-by-Step Instructions (Ubuntu/Debian-based)
 
 1. **Install Git:**
-   1. Open a terminal and use the package manager to install Git:
+    1. Open a terminal and use the package manager to install Git:
 
         ```bash
         sudo apt update
@@ -70,7 +70,7 @@ This guide provides detailed steps for installing Git on various operating syste
         ```
 
 2. **Verify Installation:**
-   1. Check the installation by running:
+    1. Check the installation by running:
 
         ```bash
         git --version
