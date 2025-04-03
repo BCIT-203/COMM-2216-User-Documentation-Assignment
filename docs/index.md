@@ -53,9 +53,7 @@ By using Git, you’ll be able to track your progress, collaborate effectively w
 Throughout the document, you will come across two types of message blocks that provide relevant information: one for warnings and one for notes.
 
 !!! Notes
-
-- Contains relevent information that you should take note of.
+    Contains relevent information that you should take note of.
 
 !!! Warning
-
-- Contains relevent warnings that should warn you.
+    Contains relevent warnings that should warn you.
