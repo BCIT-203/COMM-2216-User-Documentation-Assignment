@@ -1,8 +1,8 @@
 # Introduction
 
-## Welcome to Git's World
+## Welcome to Git’s World
 
-**Git** is a distributed [version control system (VCS)](./9-glossary.md#version-control-system-vcs) that helps track changes to your codebase, collaborate with other developers, and maintain a history of your project. Whether you're working solo or with a team, Git is an essential tool for managing your source code efficiently.
+**Git** is a distributed [version control system (VCS)](./9-glossary.md#version-control-system-vcs) that helps track changes to your codebase, collaborate with other developers, and maintain a history of your project. Whether you’re working solo or with a team, Git is an essential tool for managing your source code efficiently.
 
 ## Key Features
 
@@ -46,7 +46,7 @@ Here are some essential Git commands to get started:
 | `git revert <commit>` | Undo a specific commit by creating a new commit. |
 | `git reset --hard HEAD` | Discard all uncommitted changes and reset to the last commit. |
 
-By using Git, you'll be able to track your progress, collaborate effectively with your team, and ensure that your project is always in a stable state. Happy coding!
+By using Git, you’ll be able to track your progress, collaborate effectively with your team, and ensure that your project is always in a stable state. Happy coding!
 
 ## Notes and Warning Messages
 
@@ -59,6 +59,3 @@ Throughout the document, you will come across two types of message blocks that p
 #### Caution
 
 - Contains relevent warnings that should warn you.
-
-
-

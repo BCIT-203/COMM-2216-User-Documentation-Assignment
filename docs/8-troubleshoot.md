@@ -1,4 +1,4 @@
-# Troubleshooting guide
+# Troubleshooting
 
 ## TL;DR
 
@@ -10,10 +10,11 @@
 git branch backup-branch
 ```
 
-## Purpose of this Troubleshooting Guide
+## Overview
 
-- This guide helps resolve some of the common issues that developers may face when using Git, particularly for beginners and intermediate users.
-- Each issue is explained in a way that allows users to identify the problem, apply the correct solution, and continue their work with minimal interruptions.
+This guide helps resolve some of the common issues that developers may face when using Git, particularly for beginners and intermediate users.
+
+Each issue is explained in a way that allows users to identify the problem, apply the correct solution, and continue their work with minimal interruptions.
 
 ## 1. **"fatal: not a git repository" Error**
 
@@ -29,7 +30,7 @@ This occurs when you try to run a Git command (like `git status`) outside of a G
 
 ### Solution
 
-- Make sure you are in the correct directory. A Git repository is identified by a hidden `.git` folder. If you're not inside a repository, navigate to the correct folder where the repository is initialized or cloned.
+- Make sure you are in the correct directory. A Git repository is identified by a hidden `.git` folder. If you’re not inside a repository, navigate to the correct folder where the repository is initialized or cloned.
 - If you’re sure you should be in a repository but `.git` is missing, you might need to reinitialize the Git repository by running:
 
 ```powershell
@@ -51,7 +52,7 @@ CONFLICT (content): Merge conflict in file.txt
 
 1. **Identify and Resolve Conflicts**: Git will mark the conflicting sections of the file using conflict markers (<<<<<<<, =======, >>>>>>>). Open the conflicted file and manually resolve the differences.
 
-2. **Stage the Resolved Files**: Once you've resolved the conflict, stage the changes:
+2. **Stage the Resolved Files**: Once you’ve resolved the conflict, stage the changes:
 
 ```powershell
 git add file.txt
@@ -89,7 +90,7 @@ git checkout -b new-branch-name
 
 ### Problem
 
-You see untracked files when you run git status, and you don't want to commit them yet:
+You see untracked files when you run git status, and you don’t want to commit them yet:
 
 ```powershell
 Untracked files:
