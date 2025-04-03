@@ -47,3 +47,18 @@ Here are some essential Git commands to get started:
 | `git reset --hard HEAD` | Discard all uncommitted changes and reset to the last commit. |
 
 By using Git, you'll be able to track your progress, collaborate effectively with your team, and ensure that your project is always in a stable state. Happy coding!
+
+## Notes and Warning Messages
+
+Throughout the document, you will come across two types of message blocks that provide relevant information: one for warnings and one for notes.
+
+#### Notes
+
+- Contains relevent information that you should take note of.
+
+#### Caution
+
+- Contains relevent warnings that should warn you.
+
+
+
