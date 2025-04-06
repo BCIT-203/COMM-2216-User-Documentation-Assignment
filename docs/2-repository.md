@@ -20,6 +20,12 @@ Copy the repository’s URL. For example, a GitHub repository URL might look lik
 ```
 https://github.com/username/repository-name.git
 ```
+**Demo Repository to Try:**  
+
+ Use this test repository for practice:  
+```
+https://github.com/octocat/Hello-World.git
+```
 
 #### 2. **Open Terminal/Command Prompt**
 
